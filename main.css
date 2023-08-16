@@ -1,0 +1,94 @@
+body{
+    background-color: grey;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #292b2c;
+}
+
+.header{
+    background-color: #0c7eef;
+    padding: 20px 10px;
+    border-bottom: 1px solid #5caaf7;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.summary{
+    color: black;
+
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+.skill-card {
+    flex: 0 0 calc(25% - 20px);
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    box-sizing: border-box;
+    max-width: 250px;
+}
+.skill-card ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+.skill-card li {
+    flex: 1 0 calc(50% - 10px);
+    margin: 5px;
+}
+
+.skill-card:hover {
+    background-color: #0074D9;
+}
+
+
+
+.project-card {
+    /* Add styles for the project card as needed */
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.project-card.animate-left {
+    animation: slideInFromLeft 1s ease forwards;
+}
+.project-card.animate-right {
+    animation: slideInFromRight 1s ease forwards;
+}

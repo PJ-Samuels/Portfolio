@@ -1,96 +1,131 @@
 <!DOCTYPE html>
 <html>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src = "main.js"></script>
     <head>
         <title>Home</title>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
     </head>
     <body>
-        <h1>nav bar</h1>
         <a href = "https://www.linkedin.com/in/pj-samuels/">LinkedIn</a> 
         <a href = "https://github.com/PJ-Samuels">github</a>
+        <a> resume</a>
+
         
-        
+        <h1 class = "header">Oliver Samuels</h1>
+        <h2 class = "title">Full-Stack & Mobile Developer</h2>
+        <div class = "summary">
+            <p>Hi, I'm Oliver Samuels. I'm a web developer I have a passion for web development and love to create for web and mobile devices. I have worked in nunerous teams and done various projects in web developement. 
+                Currently I am strarting my career as a fullstack web devleoper and I am doing projects in React and Angular 
+                to reflect this. I am also working on a mobile app in Flutter. I am also working on a hardware project that uses 
+                arduino.
+            </p>
+        </div>
+        <h1 class = "title">Skills</h1><br/>
+        <div class = "skills">
+            <div class = "skill-card">
+                <p >Full-Stack Development</p>
+                <div class="skill-lists">
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>C#</li>
+                        <li>JavaScript</li>
+                        <li>Typescript</li>                  
+                        <li>HTML/CSS</li>
+                        <li>JSON</li>
+                        <li>AWS</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+            </div>
+            <div class = "skill-card">
+                <p>Frameworks</p>
+                <ul>
+                    <li>React.js</li>
+                    <li>Angular</li>
+                    <li>Flask</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                </ul>
+            </div>
+            <div class = "skill-card">
+                <p>Mobile App Development</p>
+                <ul>
+                    
+                    <li>React Native</li>
+                    <li>Swift</li>
+                    <li>Flutter(Dart)</li>
+                    <li>Android Studio(Kotlin)</li>
+                </ul>
+            </div>
+            <div class = "skill-card">
+                <p>Databases</p>
+                <ul>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                    <li>Firebase</li>
+                    <li>Redis</li>
+                </ul>
+            </div>
+        </div>
+        <div class = "projects">
+            <h1>Projects</h1>
+            <div class = "project-card animate-left">
 
-        <h1>Oliver Samuels</h1>
-        <h2>Web Developer</h2>
-        <p>Hi, I'm Oliver Samuels. I'm a web developer based in London, UK. I have a passion for web development and love to create for web and mobile devices.</p>
-        
+                <h2>Notified</h2>
+                <h3>Music notificaiton App</h3>
+                <p>Summary:</p>
+                <p>Web app and mobile application </p>
+                <p>Technologies:</p>
+                <p>React.js, Node.js, Express.js, Flutter(Dart)</p>
+                <a href  = "https://github.com/PJ-Samuels/Notified-App">github repo</a>
+            </div>
+            <div class = "project-card animate-right">
+                <h2>Fitness Finder</h2>
+                <h3>Fitness center locator</h3>
+                <p>Summary:</p>
+                <p>Web app application </p>
+                <p>Technologies:</p>
+                <p>Anuglar, Typescript, Express.js, mongodb, firebase</p>
+                <a href  = "https://github.com/PJ-Samuels/Fitness-Center-App">github repo</a>
+            </div>
+            <div class = "project-card animate-left">
+                <h2>Stock Visualizer</h2>
+                <h3>TBD</h3>
+                <p>Summary:</p>
+                <p>hardware development </p>
+                <p>Technologies:</p>
+                <p>python, flask, JavaScript</p>
+                <a href  = "https://github.com/PJ-Samuels/Stock-Visualizer">github repo</a>
+            </div>
 
-        <h1>Skills</h1>
-        <p>Full-Stack Development</p>
-        <ul>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C++</li>
-            <li>C#</li>
-            <li>JavaScript</li>
-            <li>Typescript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JSON</li>
-            <li>Amazon Web Services</li>
-            <li>Git</li>
-            <li>GitHub</li>
-        </ul>
-        <p>JavaScript Frameworks</p>
-        <ul>
-            <li>React.js</li>
-            <li>Angular</li>
-            <li>Flask</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
-        </ul>
-        <p>Mobile App Development</p>
-        <ul>
-            <li>Swift</li>
-            <li>Android Studio</li>
-            <li>Flutter(Dart)</li>
-        </ul>
-        <p>Databases</p>
-        <ul>
-            <li>MySQL</li>
-            <li>PostgreSQL</li>
-            <li>MongoDB</li>
-            <li>Google Firebase</li>
-        </ul>
-
-
-        <h1>Projects</h1>
-        <h2>Notified</h2>
-        <h3>Music notificaiton App</h3>
-        <p>Summary:</p>
-        <p>Web app and mobile application </p>
-        <p>Technologies:</p>
-        <p>React.js, Node.js, Express.js, Flutter(Dart)</p>
-
-        <h2>Fitness Finder</h2>
-        <h3>Fitness center locator</h3>
-        <p>Summary:</p>
-        <p>Web app application </p>
-        <p>Technologies:</p>
-        <p>Anuglar, Typescript, Express.js, mongodb, firebase</p>
-
-        <h2>Arduino</h2>
-        <h3>TBD</h3>
-        <p>Summary:</p>
-        <p>hardware development </p>
-        <p>Technologies:</p>
-        <p>Tinkercad, C++, Arduino</p>
-        <a href  = "">github repo</a>
-
-
-
-        <h1>Job Experiences</h1>
-        <h2>Nasdaq</h2>
-        <h3>Software Engineer Intern</h3>
-        <p></p>
-        <h2>CRACE Financial</h2>
-        <h3>Data Science Intern</h3>
-        <p></p>
-        <h2>CRACE Financial</h2>
-        <h3>Test Automation Intern</h3>
-        <p></p>
+            <div class = "project-card animate-right">
+                <h2>Arduino Projects</h2>
+                <h3>TBD</h3>
+                <p>Summary:</p>
+                <p>hardware development </p>
+                <p>Technologies:</p>
+                <p>Tinkercad, C++, Arduino</p>
+                <a href  = "https://www.tinkercad.com/things/104RQqB9LI3">Tinkercad liinks</a>
+            </div>
+        </div>
+        <div class = "work_experience">
+            <h1>Job Experiences</h1>
+            <h2>Nasdaq</h2>
+            <h3>Software Engineer Intern</h3>
+            <p></p>
+            <h2>CRACE Financial</h2>
+            <h3>Data Science Intern</h3>
+            <p></p>
+            <h2>CRACE Financial</h2>
+            <h3>Test Automation Intern</h3>
+            <p></p>
+        </div>
 
     </body>
 </html>
