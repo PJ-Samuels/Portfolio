@@ -14,7 +14,19 @@ body{
     border-radius: 5px;
     text-align: center;
 }
+.socials{
+    text-decoration: none;
+}
+.socials:hover img{
+    color: #0c7eef;
+    opacity: 0.7;
+}
 
+.socials img{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
 .summary{
     color: black;
 
@@ -58,12 +70,30 @@ body{
     background-color: #0074D9;
 }
 
-
-
-.project-card {
-    /* Add styles for the project card as needed */
+.projects h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.project-card-left{
+    background-color: #56595b;
+    border-radius: 10px;
+    text-align: left;
+    margin: 20px;
     opacity: 0;
     transform: translateX(-100%);
+}
+
+.project-card-right{
+    background-color: #0074D9;
+    border-radius: 10px;
+    text-align: right;
+    margin: 20px;
+    opacity: 0;
+    transform: translateX(100%);
+}
+.project-card-left h2,
+.project-card-right h2 {
+    text-align: center; /* Center align only h1 elements */
 }
 
 @keyframes slideInFromLeft {
@@ -86,9 +116,9 @@ body{
         transform: translateX(0);
     }
 }
-.project-card.animate-left {
+.project-card-left.animate-left {
     animation: slideInFromLeft 1s ease forwards;
 }
-.project-card.animate-right {
+.project-card-right.animate-right {
     animation: slideInFromRight 1s ease forwards;
 }
