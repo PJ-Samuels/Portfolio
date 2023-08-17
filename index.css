@@ -107,6 +107,9 @@ body::-webkit-scrollbar {
     margin: 20px;
     opacity: 0;
     transform: translateX(-100%);
+    flex-basis: 50%;
+    max-height: 60vh;
+    overflow: hidden; 
 }
 .project-card-left img, .project-card-right img{
     width: 50%;
@@ -137,6 +140,9 @@ body::-webkit-scrollbar {
     margin: 20px;
     opacity: 0;
     transform: translateX(100%);
+    flex-basis: 50%;
+    max-height: 60vh;
+    overflow: hidden; 
 }
 .project-card-left h2,
 .project-card-right h2 {
