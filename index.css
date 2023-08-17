@@ -2,9 +2,10 @@ html{
     margin: 0;
     padding: 0;
     height: 100%;
+    
 }
 body{
-    background-color: grey;
+    background-color: grey !important;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -108,11 +109,27 @@ body::-webkit-scrollbar {
     transform: translateX(-100%);
 }
 .project-card-left img, .project-card-right img{
-    width: 1000px;
-    height: 250px;
+    width: 50%;
+    height: auto;
     border-radius: 10px 10px 0 0;
+    max-width: 1000px;
+    margin: 0 auto; 
+}
+.project-summary,
+.project-image {
+    flex: 1;
+    padding: 10px;
 }
 
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+.project-content {
+    display: flex;
+    width: 100%;
+}
 .project-card-right{
     background-color: #0074D9;
     border-radius: 10px;
@@ -156,6 +173,6 @@ body::-webkit-scrollbar {
 .work_experience{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin: 0 -10px;
 }
