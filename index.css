@@ -124,6 +124,10 @@ body::-webkit-scrollbar {
     padding: 10px;
 }
 
+.project-summary img{
+    height: 30px;
+    width: 30px;
+}
 .project-image img {
     width: 100%;
     height: auto;
