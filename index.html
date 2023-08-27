@@ -15,14 +15,24 @@
         <!-- <img src = "./images/icons/mylogo.svg"> -->
         <h1 class = "header">PJ Samuels</h1>
         <h2 class = "title">Full-Stack & Mobile Developer</h2>
-        <a class = "socials" href = "https://www.linkedin.com/in/pj-samuels/"><img  src="./images/icons/linkedin.svg" alt="LinkedIn Profile"></a>
-        <a class = "socials" href = "https://github.com/PJ-Samuels"><img src = "./images/icons/github.svg"></a>
-        <div class = "summary">
-            <p>
-                Hey I'm Oliver Samuels, a Full-Stack and Mobile-App Web Developer. I have a strong background in team collaborations and have successfully delivered
-                and worked on various web development projects. My current focus is on launching my career as a full-stack web developer, with ongoing projects in React and Angular. 
-                Additionally, I'm developing a mobile app using Flutter and working on a hardware project utilizing Arduino
-            </p>
+
+        <div class = "main-description">
+            <div class = "summary">
+                <p>
+                    Hey I'm Oliver Samuels, a Full-Stack and Mobile-App Web Developer. I have a strong background in team collaborations and have successfully delivered
+                    and worked on various web development projects. My current focus is on launching my career as a full-stack web developer, with ongoing projects in React and Angular. 
+                    Additionally, I'm developing a mobile app using Flutter and working on a hardware project utilizing Arduino
+                </p>
+            </div>
+            <div class = "visuals">
+                <img class = "headshot" src = "images/project-images/headshot.JPEG"/>
+                <div>
+                    <a class = "socials" href = "https://www.linkedin.com/in/pj-samuels/"><img  src="./images/icons/linkedin.svg" alt="LinkedIn Profile"></a>
+                    <a class = "socials" href = "https://github.com/PJ-Samuels"><img src = "./images/icons/github.svg"></a>
+                    <a class = "socials"  onClick = "openEmailWebsite();"><img src = "images/icons/inbox.svg"></a>
+                </div>
+            </div>
+            
         </div>
         <h1 class = "title">Skills</h1><br/>
         <div class = "skills">
@@ -75,75 +85,94 @@
                 </ul>
             </div>
         </div>
-        <h1 class = "title">Job Experiences</h1>
-        <div class = "work_experience">
-            <div class="card">
-                <div class="card-header">
-                   Nasdaq
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Software Engineer Intern</h5>
-                  <p class="card-text">2022</p>
-                  <div class="accordion">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Work Description
-                        </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-collapse collapse show">
-                          <strong>Full-Stack Engineering</strong> this is the summary
+        <div>
+            <h1 class = "title">Job Experiences</h1>
+            <div class = "work_experience">
+                <div class="card">
+                    <div class="card-header">
+                       Nasdaq
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Software Engineer Intern</h5>
+                      <p class="card-text">2022</p>
+                      <div class="accordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Work Description
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>Full-Stack Engineering</strong> 
+                              <p></p>
+                                <strong>Technologies: </strong>Designed video web-app using HTML, CSS, JavaScript, PostgreSQL, GitLab, JSON, Flask-Python, and launched on to an AWS environment service with S3 bucket for company use.<br/>
+                                <p></p>
+                                <strong>Scope: </strong>Used the Zoom API and jQuery UI to enable interactive, feature-rich group calls with captions, text, and pinned participants, enhancing the corporate user experience.<br/>
+                                <p></p>
+                                <strong>Impact: </strong>Worked with Audio and Visual team to develop long-term functionality for video-based boardroom web-app, for full company use in quarterly boardroom meetings and team collaborations.<br/>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                   CRACE Financial
+                <div class="card">
+                    <div class="card-header">
+                       CRACE Financial
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Data Science Intern</h5>
+                      <p class="card-text">2021</p>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                    Work Description
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>Data Science Intern</strong> 
+                                        <p></p>
+                                        <strong>Technologies: </strong>Incorporated PCA and PCoA graphing to analyze the efficiency of groups generated from hierarchical clustering.<br/>
+                                        <p></p>
+                                        <strong>Scope: </strong>Conducted analysis on financial statement datasets, identifying anomalies and differences within each group, contributing to company improvements and decision-making processes.<br/>
+                                        <p></p>
+                                        <strong>Result: </strong>Automated generation of PCA and PCoA graphs for efficient visualization of clustering groups using Python scripts with Matplotlib and pandas. Utilized Google Sheets for in-depth analysis and observations.<br/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title">Data Science Intern</h5>
-                  <p class="card-text">2021</p>
-                    <div class="accordion">
+                <div class="card">
+                    <div class="card-header">CRACE Financial</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Test Automation Intern</h5>
+                        <p class="card-text">2020</p>
+                        <div class="accordion">
                         <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Work Description
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                <div class="accordion-collapse collapse show">
-                                <strong>Data Science Intern</strong> this is the summary
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                                    Work Description
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>Test Automation</strong>
+                                        <p></p>
+                                        <strong>Technologies: </strong>Designed investor web-app working with JavaScript, CSS, X-path, basic Linux, and GitHub along with Selenium and Bootstrap.<br/>
+                                        <p></p>
+                                        <strong>Scope: </strong>Collaborated with developers to extend automated Selenium tests, ensuring smooth user authentication, bug-free functionality, contributing to the successful launch of the web-app.<br/>
+                                        <p></p>
+                                        <strong>Result: </strong>Implemented tests for input validation, error detection, document uploading, and user sign-up logic, ensuring smooth authentication and functionality, while enhancing the calendar page with custom styling for a polished appearance.<br/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-              <div class="card">
-                <div class="card-header">CRACE Financial</div>
-                <div class="card-body">
-                    <h5 class="card-title">Test Automation Intern</h5>
-                    <p class="card-text">2020</p>
-                    <div class="accordion">
-                    <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Work Description
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                <div class="accordion-collapse collapse show">
-                                <strong>Test Automation</strong> this is the summary
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <div class = "projects">
             <h1>Projects</h1>
@@ -168,6 +197,7 @@
                         <img width = "20px" height = "20px" src = "./images/icons/node.svg">
                         <img width = "20px" height = "20px" src = "./images/icons/flutter.svg">
                         <img width = "20px" height = "20px" src = "./images/icons/spotify.svg"><br/>
+                        <a href="https://notified-webapp-0f26d6f34016.herokuapp.com/">Website Link</a><br/>
                         <a href="https://github.com/PJ-Samuels/Notified-App">GitHub Repo</a>
                     </div>
                     <div class="project-image">
@@ -206,11 +236,11 @@
                     </div>
                 </div>
             </div>
-            <div class = "project-card-left animate-right">
-                <h2>Other Projects</h2>
+            <div class = "project-card-left2 animate-right">
+                <h2 class = "title">Other Projects</h2>
                 <div class = "project-summary">
-                    <h3>Stock-Visualizer</h3>
-                    <p>Summary: Basic React-Flask App</p>
+                    <h3>Stock Visualizer</h3>
+                    <p>React-Flask web application that takes user-input stock names and displays the current stock prices using the Alpha Vantage API</p>
                     <img width = "20px" height = "20px" src = "./images/icons/react.svg">
                     <img width = "20px" height = "20px" src = "./images/icons/flask.svg">
                     <!-- <img width = "20px" height = "20px" src = "./images/icons/python.svg"> -->
@@ -219,26 +249,26 @@
                 </div>
                 <div class = "project-summary">
                     <h3>Arduino</h3>
-                    <p>Summary: hardware development </p>
+                    <p>Introductry level electrical engineering and circuitry utilizing C++, Tinkercard, Arduino, and physical breadboards</p>
                     <img width = "20px" height = "20px" src = "./images/icons/c++.svg">
                     <img width = "20px" height = "20px" src = "./images/icons/arduino.svg"><br/>
                     <a href  = "https://www.tinkercad.com/things/104RQqB9LI3">Tinkercad</a>
                 </div>
                 <div class = "project-summary">
                     <h3>Photoshare</h3>
-                    <p>Summary: photoshare website</p>
+                    <p>Social media platform project, using MySQL, Flask, and Html. Built for users to upload photos to albums while allowing commenting, liking, and viewing of other users photos with various filters</p>
                     <img width = "20px" height = "20px" src = "./images/icons/flask.svg">
                     <img width = "20px" height = "20px" src = "./images/icons/python.svg">
                     <img width = "20px" height = "20px" src = "./images/icons/html5.svg"><br/>
-                    <a href  = "https://github.com/PJ-Samuels/Photoshare">Github</a>
+                    <a href  = "https://github.com/PJ-Samuels/Photoshare">Github Repo</a>
                 </div>
                 <div class = "project-summary">
                     <h3>Vitamin App</h3>
-                    <p>Summary:Mobile app For vitamins</p>
+                    <p>Mobile application built using Android Studio Java, Google Firebase, and SQLite for  viewing Vitamins available given a set of user input of sympotoms or issues to help with health issues, </p>
                     <img width = "20px" height = "20px" src = "./images/icons/java.svg">
                     <img width = "20px" height = "20px" src = "./images/icons/android.svg">
                     <img width = "20px" height = "20px" src = "./images/icons/firebase.svg"><br/>
-                    <a href  = "https://github.com/CS501Fall2022/Vitamin_App">Github</a>
+                    <a href  = "https://github.com/CS501Fall2022/Vitamin_App">Github Repo</a>
                 </div>
             </div>
         </div>
@@ -249,5 +279,6 @@
             <img width = "20px" height = "20px" src = "./images/icons/aws.svg">
             <img width = "20px" height = "20px" src = "./images/icons/mysql.svg">
         </div> -->
+        </div>
     </body>
 </html>

@@ -30,3 +30,9 @@ $(document).ready(function() {
         });
     });
 });
+function openEmailWebsite() {
+    var email = "osamuels@bu.edu";
+    var emailLink = "mailto:" + email;
+    var gmailLink = "https://mail.google.com/mail/?extsrc=mailto&url=" + encodeURIComponent(emailLink);
+    window.open(gmailLink);
+  }
